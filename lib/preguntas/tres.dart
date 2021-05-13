@@ -23,15 +23,15 @@ class _TRESState extends State<TRES> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Text(
                 "¿Qué nivel de capación concidera que tiene nuestro personal?",
-                style: TextStyle(fontSize: 30.0),
+                style: TextStyle(fontSize: 20.0),
                 textAlign: TextAlign.center,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 5;
@@ -41,7 +41,7 @@ class _TRESState extends State<TRES> {
                   child: Image.asset('assets/1.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 4;
@@ -51,7 +51,7 @@ class _TRESState extends State<TRES> {
                   child: Image.asset('assets/2.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 3;
@@ -61,7 +61,7 @@ class _TRESState extends State<TRES> {
                   child: Image.asset('assets/3.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 2;
@@ -71,7 +71,7 @@ class _TRESState extends State<TRES> {
                   child: Image.asset('assets/4.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 1;

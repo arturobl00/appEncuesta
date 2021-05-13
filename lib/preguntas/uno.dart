@@ -20,15 +20,15 @@ class _UNOState extends State<UNO> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Text(
-                "¿La persona que le atendio, lo saludo?",
-                style: TextStyle(fontSize: 30.0),
+                "¿Cuando llego, la persona que le atendio, lo saludo?",
+                style: TextStyle(fontSize: 20.0),
                 textAlign: TextAlign.center,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 5;
@@ -38,7 +38,7 @@ class _UNOState extends State<UNO> {
                   child: Image.asset('assets/1.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 4;
@@ -48,7 +48,7 @@ class _UNOState extends State<UNO> {
                   child: Image.asset('assets/2.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 3;
@@ -58,7 +58,7 @@ class _UNOState extends State<UNO> {
                   child: Image.asset('assets/3.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 2;
@@ -68,7 +68,7 @@ class _UNOState extends State<UNO> {
                   child: Image.asset('assets/4.png')),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () {
                     calificacion = calificacion + 1;

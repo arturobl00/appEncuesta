@@ -1,4 +1,6 @@
+import 'package:clase8/main.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RESULTADO extends StatefulWidget {
   final int contador;
@@ -10,6 +12,7 @@ class RESULTADO extends StatefulWidget {
 
 class _RESULTADOState extends State<RESULTADO> {
   int calificacion = 0;
+  var fecha = new DateTime.now();
   @override
   Widget build(BuildContext context) {
     calificacion = widget.contador;
@@ -22,6 +25,18 @@ class _RESULTADOState extends State<RESULTADO> {
         body: Column(
           children: <Widget>[
             cuerpo(calificacion),
+            RaisedButton.icon(
+                onPressed: () {
+                  Firestore.instance
+                      .collection("resultados")
+                      .add({"Calicacion": calificacion, "Fecha": fecha});
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MyApp()));
+                },
+                icon: Icon(Icons.backup_rounded),
+                color: Colors.red,
+                textColor: Colors.white,
+                label: Text("Terminar"))
           ],
         ));
   }
@@ -66,6 +81,6 @@ Widget resultado(int calificacion2) {
   }
 
   if (calificacion2 >= 21 && calificacion2 <= 25) {
-    return Container(child: Image.asset('assets/5.png'));
+    return Container(child: Image.asset('assets/1.png'));
   }
 }
